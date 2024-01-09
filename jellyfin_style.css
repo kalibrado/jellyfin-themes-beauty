@@ -143,3 +143,25 @@ form {
     margin: 0 !important;
   }
 }
+
+
+.layout-mobile .detailPagePrimaryContainer {
+  z-index: 1;
+}
+
+@media (min-width: 1670px) {
+  .itemBackdrop {
+    height: 40vh !important;
+    display: inherit;
+  }
+  .layout-mobile .itemBackdrop {
+    margin-top: 0rem;
+  }
+  .layout-mobile .detailImageContainer .card {
+    bottom: auto;
+    -webkit-filter: drop-shadow(0 0 0.5rem #000);
+    filter: drop-shadow(0 0 0.5rem #000);
+    left: 5%;
+    max-width: 30vw;
+  }
+}
