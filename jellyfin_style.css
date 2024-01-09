@@ -52,7 +52,7 @@
   background-repeat: no-repeat;
   background-size: cover;
   filter: blur(1px);
-  background-image: url(--bkg_img_desktop) !important;
+  background-image: var(--bkg_img_desktop) !important;
 }
 #loginPage {
   background-image: none !important;
@@ -126,15 +126,15 @@ form {
   --accent: 229, 9, 20;
   --bg_item: rgba(0, 0, 0, 0.5);
   --rounding: 10px;
-  --bkg_img_desktop: "https://rawcdn.githack.com/kalibrado/jellyfin-themes-beauty/dfad914984ec2200808626501ac6c9fa3f2da470/images/galaxy-desktop.jpg";
-  --bkg_img_mobile: "https://rawcdn.githack.com/kalibrado/jellyfin-themes-beauty/dfad914984ec2200808626501ac6c9fa3f2da470/images/galaxy-mobile.jpg";
+  --bkg_img_desktop: url("https://rawcdn.githack.com/kalibrado/jellyfin-themes-beauty/dfad914984ec2200808626501ac6c9fa3f2da470/images/galaxy-desktop.jpg");
+  --bkg_img_mobile: url("https://rawcdn.githack.com/kalibrado/jellyfin-themes-beauty/dfad914984ec2200808626501ac6c9fa3f2da470/images/galaxy-mobile.jpg");
 }
 
 /* Responsive */
 /* Smartphone */
 @media (max-width: 480px) {
   .backgroundContainer {
-    background-image: url(--bkg_img_mobile) !important;
+    background-image: var(--bkg_img_mobile) !important;
   }
   .layout-mobile .itemBackdrop {
     margin-top: 0rem;
