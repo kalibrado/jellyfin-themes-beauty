@@ -3,7 +3,7 @@
 import css
 
 ```css
-@import url('https://rawcdn.githack.com/kalibrado/jellyfin-themes-beauty/db332985684795c01abc90c2262dce42ccc41278/jellyfin_style.css');
+@import url('https://rawcdn.githack.com/kalibrado/jellyfin-themes-beauty/b2b9f4e5c17a2b21b1745e6d17201aa57e5d6aaf/jellyfin_style.css');
 
 ``` 
 
