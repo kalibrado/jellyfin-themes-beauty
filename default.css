@@ -116,7 +116,7 @@ Le dernier est un moyen piraté de transformer la pochette en toile de fond sur 
   background-repeat: no-repeat;
   background-size: cover;
   filter: blur(1px);
-  background-image: var(--bkg_img_desktop) !important;
+  background-image: var(--bkg_img_desktop);
 }
 #loginPage {
   background-image: none !important;
@@ -189,15 +189,15 @@ form {
   --accent: 229, 9, 20;
   --bg_item: rgba(0, 0, 0, 0.5);
   --rounding: 10px;
-  --bkg_img_desktop: url("https://rawcdn.githack.com/kalibrado/jellyfin-themes-beauty/dfad914984ec2200808626501ac6c9fa3f2da470/images/galaxy-desktop.jpg");
-  --bkg_img_mobile: url("https://rawcdn.githack.com/kalibrado/jellyfin-themes-beauty/dfad914984ec2200808626501ac6c9fa3f2da470/images/galaxy-mobile.jpg");
+  --bkg_img_desktop: url("https://rawcdn.githack.com/kalibrado/jellyfin-themes-beauty/dfad914984ec2200808626501ac6c9fa3f2da470/images/galaxy-desktop.jpg") !important;
+  --bkg_img_mobile: url("https://rawcdn.githack.com/kalibrado/jellyfin-themes-beauty/dfad914984ec2200808626501ac6c9fa3f2da470/images/galaxy-mobile.jpg") !important;
 }
 
 /* Responsive */
 /* Smartphone */
 @media (max-width: 480px) {
   .backgroundContainer {
-    background-image: var(--bkg_img_mobile) !important;
+    background-image: var(--bkg_img_mobile);
   }
   .layout-mobile .itemBackdrop {
     margin-top: 0rem;
