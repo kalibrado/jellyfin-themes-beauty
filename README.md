@@ -3,8 +3,9 @@
 import css
 
 ```css
-@import url('https://rawcdn.githack.com/kalibrado/jellyfin-themes-beauty/55416cfe17f5889ca01f8f87d3280c0ab69bb0c5/jellyfin_style.css');
-```
+@import url('https://rawcdn.githack.com/kalibrado/jellyfin-themes-beauty/db332985684795c01abc90c2262dce42ccc41278/jellyfin_style.css');
+
+``` 
 
 ## background Images
 halloween Desktop
