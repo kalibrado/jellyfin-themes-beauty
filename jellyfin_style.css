@@ -1,0 +1,184 @@
+@import url("https://cdn.jsdelivr.net/gh/CTalvio/Ultrachromic/base.css");
+@import url("https://cdn.jsdelivr.net/gh/CTalvio/Ultrachromic/accentlist.css");
+@import url("https://cdn.jsdelivr.net/gh/CTalvio/Ultrachromic/fixes.css");
+@import url("https://cdn.jsdelivr.net/gh/CTalvio/Ultrachromic/jf_font.css");
+
+/** Icon Style*/
+@import url("https://cdn.jsdelivr.net/gh/prayag17/Jellyfin-Icons/Outline.css");
+
+/** Themes **/ 
+@import url("https://cdn.jsdelivr.net/gh/CTalvio/Ultrachromic/presets/monochromic_preset.css");
+
+/** Color style **/
+@import url("https://cdn.jsdelivr.net/gh/CTalvio/Ultrachromic/type/dark_withaccent.css");
+
+/** Rounding **/
+@import url("https://cdn.jsdelivr.net/gh/CTalvio/Ultrachromic/rounding_circlehover.css");
+
+/** Small Card **/
+@import url("https://cdn.jsdelivr.net/gh/CTalvio/Ultrachromic/smallercast.css");
+
+/** Compact list **/
+@import url("https://cdn.jsdelivr.net/gh/CTalvio/Ultrachromic/episodelist/episodes_compactlist.css");
+
+/** Header transparente **/
+@import url("https://cdn.jsdelivr.net/gh/CTalvio/Ultrachromic/header/header_transparent.css");
+
+/** Login Screen**/
+@import url("https://cdn.jsdelivr.net/gh/CTalvio/Ultrachromic/login/login_minimalistic.css");
+
+/** Fields style **/
+@import url("https://cdn.jsdelivr.net/gh/CTalvio/Ultrachromic/fields/fields_border.css");
+
+/** Indicator see **/
+@import url("https://cdn.jsdelivr.net/gh/CTalvio/Ultrachromic/cornerindicator/indicator_floating.css");
+
+/** Title Page **/
+@import url("https://cdn.jsdelivr.net/gh/CTalvio/Ultrachromic/titlepage/title_banner-logo.css");
+
+/**  Progress Bar **/
+@import url("https://cdn.jsdelivr.net/gh/CTalvio/Ultrachromic/progress/floating.css");
+
+/** Effect **/
+@import url("https://cdn.jsdelivr.net/gh/CTalvio/Ultrachromic/effects/hoverglow.css");
+@import url("https://cdn.jsdelivr.net/gh/CTalvio/Ultrachromic/effects/glassy.css");
+@import url("https://cdn.jsdelivr.net/gh/CTalvio/Ultrachromic/effects/pan-animation.css");
+@import url("https://ctalvio.github.io/Monochromic/backdrop-hack_style.css");
+
+/* Style backdrop*/
+.backgroundContainer {
+  background-position: center center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  filter: blur(1px);
+  background-image: url(--bkg_img_desktop) !important;
+}
+#loginPage {
+  background-image: none !important;
+}
+
+.trackSelections {
+  max-width: 100%;
+}
+
+.skinHeader.semiTransparent {
+  -webkit-backdrop-filter: none !important;
+  backdrop-filter: none !important;
+  background-color: rgba(0, 0, 0, 0) !important;
+}
+
+.editPageSidebar,
+.readOnlyContent,
+form {
+  border-radius: var(--rounding);
+  padding: 16px;
+  background-color: var(--bg_item) !important;
+  margin: 2vh auto;
+}
+
+.noHomeButtonHeader > .headerTabs {
+  display: none;
+}
+
+#indexPage {
+  margin-top: 5vh;
+}
+.libraryPage {
+  padding-top: 7vh !important;
+}
+.content-primary,
+.padded-bottom-page,
+.page,
+.pageWithAbsoluteTabs,
+.pageTabContent {
+  padding-bottom: 1vh !important;
+}
+
+/* NOTIFICATION USER*/
+.emby-tabs-slider::before {
+  /* Add text to notifie  */
+  content: "";
+  color: red;
+  font-weight: bold;
+  position: fixed;
+  bottom: 3.1em;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  /* uncoment this line to show notification and set time default is 7s pop notification */
+  /*animation: fadeOut 7s linear forwards;*/
+}
+
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    display: none;
+  }
+}
+
+/** background Images  **/
+/*
+  halloween PC - assets/img/halloween-desktop.jpg
+  halloween MOBILE - assets/img/halloween-mobile.jpg
+  galaxy PC - assets/img/galaxy-desktop.jpg
+  galaxy MOBILE - assets/img/galaxy-mobile.jpg
+  mountain PC - assets/img/mountain-desktop.jpg
+  mountain MOBILE - assets/img/mountain-mobile.jpg
+  nature PC - assets/img/nature-desktop.jpg
+  nature MOBILE - assets/img/nature-mobile.jpg
+  noel PC - assets/img/noel-desktop.jpg
+  noel MOBILE - assets/img/noel-mobile.jpg
+*/
+
+/*Accent and roundingd */
+:root {
+  --accent: 229, 9, 20;
+  --bg_item: rgba(0, 0, 0, 0.5);
+  --rounding: 10px;
+  --bkg_img_desktop: "assets/img/galaxy-desktop.jpg";
+  --bkg_img_mobile: "assets/img/galaxy-mobile.jpg";
+}
+
+/* Responsive */
+/* Smartphone */
+@media (max-width: 480px) {
+  .backgroundContainer {
+    background-image: url(--bkg_img_mobile) !important;
+  }
+  .layout-mobile .itemBackdrop {
+    margin-top: 0rem;
+    height: 0px !important;
+  }
+
+  .mainDetailButtons .focuscontainer-x {
+    background-color: var(--bg_item) !important;
+  }
+
+  .detailPageContent {
+    background-color: var(--bg_item) !important;
+    border-radius: var(--rounding);
+    padding: 10px;
+  }
+  .layout-mobile .detailPageWrapperContainer {
+    margin-top: 35%;
+    z-index: 0;
+  }
+}
+/* Desktop */
+@media (min-width: 481px) {
+  .skinHeader.semiTransparent {
+    -webkit-backdrop-filter: none !important;
+    backdrop-filter: none !important;
+    background-color: var(--bg_item) !important;
+  }
+  .detailPageSecondaryContainer {
+    background-color: var(--bg_item) !important;
+    border-radius: var(--rounding);
+    padding: 10px;
+    margin: 0 !important;
+  }
+}
