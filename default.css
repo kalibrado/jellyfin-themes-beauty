@@ -1,0 +1,248 @@
+/** Obligatoire **/
+@import url("https://cdn.jsdelivr.net/gh/CTalvio/Ultrachromic/base.css");
+@import url("https://cdn.jsdelivr.net/gh/CTalvio/Ultrachromic/accentlist.css");
+
+/** Recomandé **/
+@import url("https://cdn.jsdelivr.net/gh/CTalvio/Ultrachromic/fixes.css");
+@import url("https://cdn.jsdelivr.net/gh/CTalvio/Ultrachromic/jf_font.css");
+
+/** Style Icone **/
+@import url("https://cdn.jsdelivr.net/gh/prayag17/Jellyfin-Icons/Outline.css");
+
+/**
+Ceux-ci vous permettent d'utiliser Ultrachromic en utilisant quelques préréglages. Ceux-ci suivent le même look que les anciens thèmes chromiques.
+Une seule ligne est nécessaire, nova et kaleido prennent en charge les accents personnalisés.
+**/
+@import url("https://cdn.jsdelivr.net/gh/CTalvio/Ultrachromic/presets/monochromic_preset.css");
+/* @import url('https://cdn.jsdelivr.net/gh/CTalvio/Ultrachromic/presets/kaleidochromic_preset.css'); */
+/* @import url('https://cdn.jsdelivr.net/gh/CTalvio/Ultrachromic/presets/novachromic_preset.css'); */
+
+/** Type de couleur **/
+/*
+Type sombre, 
+clair et coloré. 
+Vous devez en utiliser un. 
+Si vous souhaitez utiliser une couleur d'accent avec le style sombre, 
+utilisez la ligne "_withaccent".
+*/
+/* @import url('https://cdn.jsdelivr.net/gh/CTalvio/Ultrachromic/type/dark.css'); */
+@import url("https://cdn.jsdelivr.net/gh/CTalvio/Ultrachromic/type/dark_withaccent.css");
+/* @import url('https://cdn.jsdelivr.net/gh/CTalvio/Ultrachromic/type/light.css'); */
+/* @import url('https://cdn.jsdelivr.net/gh/CTalvio/Ultrachromic/type/light_withaccent.css'); */
+/* @import url('https://cdn.jsdelivr.net/gh/CTalvio/Ultrachromic/type/colorful.css'); */
+/* @import url('https://cdn.jsdelivr.net/gh/CTalvio/Ultrachromic/type/colorful_withaccent.css'); */
+
+/** Arrondi **/
+/*
+Si vous souhaitez modifier l'arrondi des coins dans l'interface utilisateur, incluez-en un, 
+circlehover conserve l'accent du cercle d'origine lorsque vous survolez des objets, 
+sinon l'accent sera un carré arrondi comme tout le reste.
+*/
+/* @import url('https://cdn.jsdelivr.net/gh/CTalvio/Ultrachromic/rounding.css'); */
+@import url("https://cdn.jsdelivr.net/gh/CTalvio/Ultrachromic/rounding_circlehover.css");
+
+/** Liste de distribution plus petite **/
+/* Une liste de diffusion de style format carré plus petite. */
+@import url("https://cdn.jsdelivr.net/gh/CTalvio/Ultrachromic/smallercast.css");
+
+/**Liste compacte des épisodes **/
+/* 
+Une liste d'épisodes à défilement plus facile, 
+il existe la possibilité de la conserver sous forme de liste plus compacte ou de transformer la liste d'épisodes en un menu en grille. 
+*/
+@import url("https://cdn.jsdelivr.net/gh/CTalvio/Ultrachromic/episodelist/episodes_compactlist.css");
+/* @import url("https://cdn.jsdelivr.net/gh/CTalvio/Ultrachromic/episodelist/episodes_grid.css"); */
+
+/** Barre supérieure transparente **/
+@import url("https://cdn.jsdelivr.net/gh/CTalvio/Ultrachromic/header/header_transparent.css");
+
+/**  Écran de connexion **/
+/* 
+Styles d’écran de connexion. 
+L’option minimaliste n’a pas de cadre ni de texte d’invite. 
+Vous pouvez également définir un arrière-plan personnalisé, voir plus loin ci-dessous.
+*/
+@import url("https://cdn.jsdelivr.net/gh/CTalvio/Ultrachromic/login/login_minimalistic.css");
+/* @import url("https://cdn.jsdelivr.net/gh/CTalvio/Ultrachromic/login/login_frame.css"); */
+
+/** Champs de saisie **/
+/* 
+Styles de champ de saisie, avec des bordures mises en surbrillance lorsqu'elles sont sélectionnées, 
+ou sans bordures, et l'arrière-plan est mis en surbrillance lorsqu'elles sont sélectionnées.
+*/
+/* @import url('https://cdn.jsdelivr.net/gh/CTalvio/Ultrachromic/fields/fields_noborder.css'); */
+@import url("https://cdn.jsdelivr.net/gh/CTalvio/Ultrachromic/fields/fields_border.css");
+
+/** Indicateurs surveillés/non surveillés **/
+/* Deux options : l'indicateur doit-il être flottant ou attaché au coin de la carte de titre. */
+@import url("https://cdn.jsdelivr.net/gh/CTalvio/Ultrachromic/cornerindicator/indicator_floating.css");
+@import url("https://cdn.jsdelivr.net/gh/CTalvio/Ultrachromic/cornerindicator/indicator_corner.css");
+
+/** Page de titre **/
+/*
+Quatre options, deux versions, chaque version peut être utilisée avec ou sans logo remplaçant le texte du titre.
+*/
+/* @import url("https://cdn.jsdelivr.net/gh/CTalvio/Ultrachromic/titlepage/title_simple.css"); */
+/* @import url("https://cdn.jsdelivr.net/gh/CTalvio/Ultrachromic/titlepage/title_simple-logo.css"); */
+/* @import url("https://cdn.jsdelivr.net/gh/CTalvio/Ultrachromic/titlepage/title_banner.css"); */
+@import url("https://cdn.jsdelivr.net/gh/CTalvio/Ultrachromic/titlepage/title_banner-logo.css");
+
+/**  Barre de progression **/
+/* Indicateur de progression par défaut, superposé ou flottant pour les éléments de bibliothèque. */
+/* @import url('https://cdn.jsdelivr.net/gh/CTalvio/Ultrachromic/bottombarprogress.css');
+@import url('https://cdn.jsdelivr.net/gh/CTalvio/Ultrachromic/overlayprogress.css'); */
+@import url("https://cdn.jsdelivr.net/gh/CTalvio/Ultrachromic/progress/floating.css");
+
+/** Effets **/
+
+/* 
+Un régal pour les yeux supplémentaire. Faites briller les éléments au survol, rendez certains éléments de l'interface utilisateur transparents.
+L'animation panoramique anime la toile de fond avec un panoramique lent. 
+Le dernier est un moyen piraté de transformer la pochette en toile de fond sur mobile, car elle a été supprimée dans la version 10.7.0.
+*/
+@import url("https://cdn.jsdelivr.net/gh/CTalvio/Ultrachromic/effects/hoverglow.css");
+/* ET/OU */
+@import url("https://cdn.jsdelivr.net/gh/CTalvio/Ultrachromic/effects/glassy.css");
+/* ET/OU */
+@import url("https://cdn.jsdelivr.net/gh/CTalvio/Ultrachromic/effects/pan-animation.css");
+/* ET/OU */
+@import url("https://ctalvio.github.io/Monochromic/backdrop-hack_style.css");
+
+/* Style backdrop*/
+
+.backgroundContainer {
+  background-position: center center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  filter: blur(1px);
+  background-image: url(--bkg_img_desktop) !important;
+}
+#loginPage {
+  background-image: none !important;
+}
+
+.trackSelections {
+  max-width: 100%;
+}
+
+.skinHeader.semiTransparent {
+  -webkit-backdrop-filter: none !important;
+  backdrop-filter: none !important;
+  background-color: rgba(0, 0, 0, 0) !important;
+}
+
+.editPageSidebar,
+.readOnlyContent,
+form {
+  border-radius: var(--rounding);
+  padding: 16px;
+  background-color: var(--bg_item) !important;
+  margin: 2vh auto;
+}
+
+.noHomeButtonHeader > .headerTabs {
+  display: none;
+}
+
+#indexPage {
+  margin-top: 5vh;
+}
+.libraryPage {
+  padding-top: 7vh !important;
+}
+.content-primary,
+.padded-bottom-page,
+.page,
+.pageWithAbsoluteTabs,
+.pageTabContent {
+  padding-bottom: 1vh !important;
+}
+
+/* NOTIFICATION USER*/
+.emby-tabs-slider::before {
+  /* Add text to notifie  */
+  content: "";
+  color: red;
+  font-weight: bold;
+  position: fixed;
+  bottom: 3.1em;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  /* uncoment this line to show notification and set time default is 7s pop notification */
+  /*animation: fadeOut 7s linear forwards;*/
+}
+
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    display: none;
+  }
+}
+
+/** background Images  **/
+/*
+  halloween PC - assets/img/halloween-desktop.jpg
+  halloween MOBILE - assets/img/halloween-mobile.jpg
+  galaxy PC - assets/img/galaxy-desktop.jpg
+  galaxy MOBILE - assets/img/galaxy-mobile.jpg
+  mountain PC - assets/img/mountain-desktop.jpg
+  mountain MOBILE - assets/img/mountain-mobile.jpg
+  nature PC - assets/img/nature-desktop.jpg
+  nature MOBILE - assets/img/nature-mobile.jpg
+  noel PC - assets/img/noel-desktop.jpg
+  noel MOBILE - assets/img/noel-mobile.jpg
+*/
+
+/*Accent and roundingd */
+:root {
+  --accent: 229, 9, 20;
+  --bg_item: rgba(0, 0, 0, 0.5);
+  --rounding: 10px;
+  --bkg_img_desktop: "assets/img/galaxy-desktop.jpg";
+  --bkg_img_mobile: "assets/img/galaxy-mobile.jpg";
+}
+
+/* Responsive */
+/* Smartphone */
+@media (max-width: 480px) {
+  .backgroundContainer {
+    background-image: url(--bkg_img_mobile) !important;
+  }
+  .layout-mobile .itemBackdrop {
+    margin-top: 0rem;
+    height: 0px !important;
+  }
+
+  .mainDetailButtons .focuscontainer-x {
+    background-color: var(--bg_item) !important;
+  }
+
+  .detailPageContent {
+    background-color: var(--bg_item) !important;
+    border-radius: var(--rounding);
+    padding: 10px;
+  }
+  .layout-mobile .detailPageWrapperContainer {
+    margin-top: 35%;
+    z-index: 0;
+  }
+}
+/* Desktop */
+@media (min-width: 481px) {
+  .skinHeader.semiTransparent {
+    -webkit-backdrop-filter: none !important;
+    backdrop-filter: none !important;
+    background-color: var(--bg_item) !important;
+  }
+  .detailPageSecondaryContainer {
+    background-color: var(--bg_item) !important;
+    border-radius: var(--rounding);
+    padding: 10px;
+    margin: 0 !important;
+  }
+}
