@@ -96,18 +96,16 @@ form {
 }
 
 /* NOTIFICATION USER*/
-.emby-tabs-slider::before {
+.skinHeader::before {
   /* Add text to notifie  */
-  content: "";
+  content: "test notification";
   color: red;
   font-weight: bold;
-  position: fixed;
-  bottom: 3.1em;
-  left: 0;
+  position: static;
   width: 100%;
   text-align: center;
   /* uncoment this line to show notification and set time default is 7s pop notification */
-  /*animation: fadeOut 7s linear forwards;*/
+  animation: fadeOut 7s linear forwards;
 }
 
 @keyframes fadeOut {

@@ -48,3 +48,21 @@ Edit this code for change background image
   --bkg_img_mobile: "https://rawcdn.githack.com/kalibrado/jellyfin-themes-beauty/dfad914984ec2200808626501ac6c9fa3f2da470/images/galaxy-mobile.jpg";
 }
 ```
+
+
+For showing msg user edit this code 
+
+```css
+/* NOTIFICATION USER*/
+.skinHeader::before {
+  /* Add text to notifie  */
+  content: "test notification";
+  color: red;
+  font-weight: bold;
+  position: static;
+  width: 100%;
+  text-align: center;
+  /* uncoment this line to show notification and set time default is 7s pop notification */
+  animation: fadeOut 7s linear forwards;
+}
+```
