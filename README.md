@@ -50,8 +50,7 @@ Edit this code for change background image
 }
 ```
 
-
-For showing msg user edit this code 
+## Tips notification user add this code 
 
 ```css
 /* NOTIFICATION USER*/
@@ -66,4 +65,15 @@ For showing msg user edit this code
   /* uncoment this line to show notification and set time default is 7s pop notification */
   animation: fadeOut 7s linear forwards;
 }
+
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    display: none;
+  }
+}
+
 ```

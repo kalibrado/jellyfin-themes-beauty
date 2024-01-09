@@ -95,30 +95,6 @@ form {
   padding-bottom: 1vh !important;
 }
 
-/* NOTIFICATION USER*/
-.skinHeader::before {
-  /* Add text to notifie  */
-  content: "test notification";
-  color: red;
-  font-weight: bold;
-  position: static;
-  width: 100%;
-  text-align: center;
-  /* uncoment this line to show notification and set time default is 7s pop notification */
-  animation: fadeOut 7s linear forwards;
-}
-
-@keyframes fadeOut {
-  0% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 0;
-    display: none;
-  }
-}
-
-
 /*Accent and roundingd */
 :root {
   --accent: 229, 9, 20;
