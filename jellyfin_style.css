@@ -120,27 +120,14 @@ form {
   }
 }
 
-/** background Images  **/
-/*
-  halloween PC - assets/img/halloween-desktop.jpg
-  halloween MOBILE - assets/img/halloween-mobile.jpg
-  galaxy PC - assets/img/galaxy-desktop.jpg
-  galaxy MOBILE - assets/img/galaxy-mobile.jpg
-  mountain PC - assets/img/mountain-desktop.jpg
-  mountain MOBILE - assets/img/mountain-mobile.jpg
-  nature PC - assets/img/nature-desktop.jpg
-  nature MOBILE - assets/img/nature-mobile.jpg
-  noel PC - assets/img/noel-desktop.jpg
-  noel MOBILE - assets/img/noel-mobile.jpg
-*/
 
 /*Accent and roundingd */
 :root {
   --accent: 229, 9, 20;
   --bg_item: rgba(0, 0, 0, 0.5);
   --rounding: 10px;
-  --bkg_img_desktop: "assets/img/galaxy-desktop.jpg";
-  --bkg_img_mobile: "assets/img/galaxy-mobile.jpg";
+  --bkg_img_desktop: "https://rawcdn.githack.com/kalibrado/jellyfin-themes-beauty/dfad914984ec2200808626501ac6c9fa3f2da470/images/galaxy-desktop.jpg";
+  --bkg_img_mobile: "https://rawcdn.githack.com/kalibrado/jellyfin-themes-beauty/dfad914984ec2200808626501ac6c9fa3f2da470/images/galaxy-mobile.jpg";
 }
 
 /* Responsive */
