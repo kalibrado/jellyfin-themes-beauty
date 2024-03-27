@@ -6,7 +6,7 @@
 /** Icon Style*/
 @import url("https://cdn.jsdelivr.net/gh/prayag17/Jellyfin-Icons/Outline.css");
 
-/** Themes **/ 
+/** Themes **/
 @import url("https://cdn.jsdelivr.net/gh/CTalvio/Ultrachromic/presets/monochromic_preset.css");
 
 /** Color style **/
@@ -100,18 +100,22 @@ form {
   --accent: 229, 9, 20;
   --bg_item: rgba(0, 0, 0, 0.5);
   --rounding: 10px;
-  --bkg_img_desktop: url("https://rawcdn.githack.com/kalibrado/jellyfin-themes-beauty/dfad914984ec2200808626501ac6c9fa3f2da470/images/galaxy-desktop.jpg") !important;
-  --bkg_img_mobile: url("https://rawcdn.githack.com/kalibrado/jellyfin-themes-beauty/dfad914984ec2200808626501ac6c9fa3f2da470/images/galaxy-mobile.jpg") !important;
+  --bkg_img_desktop: url("https://github.com/kalibrado/jellyfin-themes-beauty/blob/main/images/nature-desktop.jpg?raw=true") !important;
+  --bkg_img_mobile: url("https://github.com/kalibrado/jellyfin-themes-beauty/blob/main/images/nature-mobile.jpg?raw=true") !important;
+}
+
+.layout-mobile .itemBackdrop {
+  margin-top: 6px !important;
 }
 
 /* Responsive */
+
 /* Smartphone */
 @media (max-width: 480px) {
   .backgroundContainer {
     background-image: var(--bkg_img_mobile);
   }
   .layout-mobile .itemBackdrop {
-    margin-top: 0rem;
     height: 0px !important;
   }
 
@@ -144,24 +148,40 @@ form {
   }
 }
 
-
 .layout-mobile .detailPagePrimaryContainer {
   z-index: 1;
 }
 
-@media (min-width: 1670px) {
+@media (min-width: 1177px) {
   .itemBackdrop {
     height: 40vh !important;
     display: inherit;
   }
-  .layout-mobile .itemBackdrop {
-    margin-top: 0rem;
+  .layout-mobile .detailImageContainer .card,
+  .layout-mobile .detailImageContainer .card.backdropCard,
+  .layout-mobile .detailImageContainer .card.squareCard {
+    top: auto !important;
   }
   .layout-mobile .detailImageContainer .card {
-    bottom: auto;
+    bottom: -100% !important;
+    -webkit-filter: drop-shadow(0 0 0.5rem #000) !important;
+    filter: drop-shadow(0 0 0.5rem #000) !important;
+    left: 5% !important;
+    max-width: 30vw !important;
+  }
+}
+
+@media (min-width: 800px) and (max-width: 1177px)  {
+  .layout-mobile .detailPageContent {
+    padding-left: 30%;
+    padding-right: 5%;
+  }
+  .layout-mobile .detailImageContainer .card {
+    bottom: -150% !important;
     -webkit-filter: drop-shadow(0 0 0.5rem #000);
     filter: drop-shadow(0 0 0.5rem #000);
     left: 5%;
     max-width: 30vw;
   }
 }
+ 
